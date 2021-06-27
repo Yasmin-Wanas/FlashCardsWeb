@@ -1,0 +1,98 @@
+.collapse.show .nav-link
+{
+    text-align: center;
+}
+
+.carousel-inner {
+    border-radius: 15px;
+}
+.flip-card {
+  background-color: transparent;
+  width: 500px;
+  height: 350px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+    border-radius: 15px;
+}
+.flip-card-side {
+    background-color: transparent;
+  width: 160px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+    margin:5px;
+}
+.flip-card-side:hover .flip-card-inner{
+  transform: rotateY(180deg);
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner{
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+    border-radius: 15px;
+}
+
+.flip-card-back {
+  background-color: #0a1931;
+  color: white;
+  transform: rotateY(180deg);
+}
+.c1 {
+    background-color: #ffc947;
+}
+.c2 {
+    background-color: #feddbe;
+}
+.c3 {
+    background-color: #9fe6a0;
+}
+.c4 {
+    background-color: #deedf0;
+}
+.c5 {
+    background-color: #ffeda3;
+}
+.c6 {
+    background-color: #f5e6ca;
+}
+.c7 {
+    background-color: #e4bad4;
+}
+.learn-answer-small {
+    padding: 30%;
+}
+.learn-answer {
+    padding: 25%;
+    margin-right: 12%;
+}
+.icons-bar {
+    height: 40px;
+    background-color: #0a1931;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.icons {
+    background: transparent;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    margin-right: 15px;
+}
+.icons:hover {
+    color: #ffc947;
+}

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="lib/all.css" />
+    <link rel="stylesheet" href="lib/particles.css" />
+    <link rel="stylesheet" href="css/Home.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/learn.css" />
+</head>
+<body>
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark awake">
+        <div class="container">
+            <a class="navbar-brand" href="Home.html"><img class="img-fluid logo" src="images/first-logo.png" width="100"></a>
+            <button class="navbar-toggler" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a class="nav-link active" href="Home.html">Home</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="AboutUs.html">About us</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown">
+                            Manage
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item mt-2" href="Manage.html"><span class="fas fa-plus-square"></span> Create Deck</a>
+                            <a class="dropdown-item mt-2" href="Manage.html"><span class="far fa-edit"></span> Edit Deck</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="Learn.html">Learn</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contact.html">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- header -->
+    <div class="hero-wrap" style="height:350px !important;z-index: 1">
+        <div class="overlay"></div>
+        <div id="particles-js"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center success">
+                    <span class="mr-2"><a href="Home.html">Home</a></span>
+                    <span>Learn</span>
+                    <h1 class="mb-4" id="success"><strong>Learn</strong></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- form Learn -->
+    <div class="container bg-light">
+        <section>
+            <div class="row">
+                <div class="col-md-6 contact-section">
+                    <div id="carouselExampleIndicators" class="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" class="active"></li>
+                        <li data-target="#carouselExampleIndicators"></li>
+                        <li data-target="#carouselExampleIndicators"></li>
+                      </ol>
+                      
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="flip-card">
+                              <div class="flip-card-inner">
+                                <div class="flip-card-front c1"><!--Background-->
+                                  <h2 class="learn-answer">What's the movie name?</h2>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1 class="learn-answer">The Avengers</h1>h1>
+                                </div>
+                              </div>
+                            </div>                        
+                          </div>
+                        <div class="carousel-item">
+                            <div class="flip-card">
+                              <div class="flip-card-inner">
+                                <div class="flip-card-front c2">
+                                  <h2 class="learn-answer">What's you favourite series?</h2>
+                                </div>
+                                <div class="flip-card-back">
+                                  <h1 class="learn-answer">Friends</h1>
+                                </div>
+                              </div>
+                            </div>                           
+                        </div>
+                        <div class="carousel-item">
+                            <div class="flip-card">
+                              <div class="flip-card-inner">
+                                <div class="flip-card-front c3">
+                                  <h2 class="learn-answer">Who's the best actor?</h2>
+                                </div>
+                                <div class="flip-card-back">
+                                  <h1 class="learn-answer">John Doe</h1>
+                                </div>
+                              </div>
+                            </div>                           
+                          </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+
+                    <div class="icons-bar">
+                        <div class="row justify-content-center">
+                            <button class="icons flip" title="Flip Card" id="icon_clicked1" onclick="ChangeIconColour1()"><i class="fas fa-sync-alt"></i></button>
+                            <button class="icons" title="Difficult Card" id="icon_clicked2" onclick="ChangeIconColour2()"><i class="fas fa-bolt"></i></button>
+                            <button class="icons" title="Correct Answer" id="icon_clicked3" onclick="ChangeIconColour3()"><i class="fas fa-check"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 contact-section">
+                  
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-6" style="width: auto">
+                            <div class="flip-card-side">
+                              <div class="flip-card-inner">
+                                <div class="flip-card-front c3">
+                                  <h4 class="learn-answer-small">what do u need?</h4>
+                                </div>
+                                <div class="flip-card-back">
+                                  <h3 class="learn-answer-small">Bla bla</h3>
+                                </div>
+                              </div>
+                            </div>  
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6" style="width: auto">
+                            <div class="flip-card-side">
+                              <div class="flip-card-inner">
+                                <div class="flip-card-front c2">
+                                  <h4 class="learn-answer-small">just test here</h4>
+                                </div>
+                                <div class="flip-card-back">
+                                  <h3 class="learn-answer-small">Test test</h3>
+                                </div>
+                              </div>
+                            </div>  
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6" style="width: auto">
+                            <div class="flip-card-side">
+                              <div class="flip-card-inner">
+                                <div class="flip-card-front c4">
+                                  <h4 class="learn-answer-small">think about it</h4>
+                                </div>
+                                <div class="flip-card-back">
+                                  <h3 class="learn-answer-small">Think think</h3>
+                                </div>
+                              </div>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-6" style="width: auto">
+                            <div class="flip-card-side">
+                              <div class="flip-card-inner">
+                                <div class="flip-card-front c5">
+                                  <h4 class="learn-answer-small">Who's the best?</h4>
+                                </div>
+                                <div class="flip-card-back">
+                                  <h3 class="learn-answer-small">John Doe</h3>
+                                </div>
+                              </div>
+                            </div>  
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6" style="width: auto">
+                            <div class="flip-card-side">
+                              <div class="flip-card-inner">
+                                <div class="flip-card-front c6">
+                                  <h4 class="learn-answer-small">What's your fav?</h4>
+                                </div>
+                                <div class="flip-card-back">
+                                  <h3 class="learn-answer-small">Friends Series</h3>
+                                </div>
+                              </div>
+                            </div>  
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6" style="width: auto">
+                            <div class="flip-card-side">
+                              <div class="flip-card-inner">
+                                <div class="flip-card-front c7">
+                                  <h4 class="learn-answer-small">What's the color</h4>
+                                </div>
+                                <div class="flip-card-back">
+                                  <h3 class="learn-answer-small">Just blue</h3>
+                                </div>
+                              </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+   
+    <footer>
+        <div class="container">
+            <div class="icon text-center">
+                <div class="icon-container">
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+                <div class="icon-container">
+                    <i class="fab fa-facebook"></i>
+                </div>
+                <div class="icon-container">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-3 footer-text">
+                    <a>Privacy and Policy</a>
+                </div>
+                <div class="col-md-3 footer-text">
+                    <a>Terms and Conditions</a>
+                </div>
+                <div class="col-md-3 footer-text">
+                    <a>Contact us</a>
+                </div>
+                <div class="col-md-3 footer-text">
+                    <a>Ask for help</a>
+                </div>
+            </div>
+            <div class="row copyright">
+                <div class="col-md-12 text-center">
+                    <p>Copyright &copy; 2021 All rights reserved | Ainshams University</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="lib/all.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="lib/particle.js"></script>
+    <script src="lib/particles.min.js"></script>
+    <script src="js/HomePage.js"></script>
+</body>
+</html>
